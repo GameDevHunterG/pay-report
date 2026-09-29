@@ -17,6 +17,10 @@ struct Employee {
 
 int main()
 {
+    int size;
+    cout << "Enter the number of employees: ";
+    cin >> size;
+
     (void)_getch();
     return 0;
 }
