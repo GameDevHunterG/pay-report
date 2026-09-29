@@ -37,6 +37,17 @@ int main()
         cin >> employees[i].HourlyRate;
     }
 
+    cout << "\nPay Report\n";
+    cout << "-------------\n";
+    float paySum = 0;
+    for (int i = 0; i < size; i++)
+    {
+        float pay = employees[i].HoursWorked * employees[i].HourlyRate;
+        cout << employees[i].ID << ". " << employees[i].FirstName << " " << employees[i].LastName << ": $" << pay << "\n";
+        paySum += pay;
+    }
+    cout << "\nTotal pay: $" << paySum << "\n";
+
     (void)_getch();
     return 0;
 }
